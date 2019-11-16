@@ -13,7 +13,7 @@ FILE * pFile;
 
 int main()
 {
-	string directory = "C:/Users/Mbethune-Waddell/Desktop/test_directory/";
+	string directory = "./";
 	string file_name = "Log_file.txt";
 	int command_number;
 
@@ -26,7 +26,6 @@ int main()
 	Log.write_line_with_timestamp("and then this line happened after");
 	Log.write_line("This is a line without a timstamp");
 	Log.write_line("Here is another line without a timestamp");
-	Log.write_line_with_timestamp("The return of the timestamp line");
 
 	Log.timestamp();
 	Log.append("\t a custom timestamp line by calling timestamp(), then append(), then newline()");
